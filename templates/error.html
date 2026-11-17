@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shaw Wealth Partners — Connection Error</title>
+    <style>
+        body { font-family: -apple-system, 'Segoe UI', system-ui, sans-serif; background: #f4f6f9; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .card { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.1); padding: 48px; max-width: 540px; text-align: center; }
+        h1 { color: #c0392b; margin-bottom: 16px; }
+        p { color: #555; line-height: 1.6; }
+        code { background: #f8f8f8; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; }
+        .retry { margin-top: 24px; display: inline-block; padding: 10px 28px; background: #2c3e50; color: #fff; border-radius: 6px; text-decoration: none; }
+        .retry:hover { background: #1a252f; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Unable to connect</h1>
+        <p>The dashboard could not reach the Snowflake data warehouse. Please verify your <code>.env</code> credentials and network connectivity.</p>
+        <p style="color:#999; font-size:0.85em;">{{ message }}</p>
+        <a class="retry" href="/">Retry</a>
+    </div>
+</body>
+</html>
